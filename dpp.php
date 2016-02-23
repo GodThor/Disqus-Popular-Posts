@@ -329,7 +329,7 @@ if(!class_exists('dpp')) {
 						# Get the ID by the dsq_thread_id meta_value
 						if(!$post_id && isset($fields->id)) {
 							$post_array = get_posts(array('posts_per_page'=>1,'meta_key'=>'dsq_thread_id','meta_value'=>$fields->id));
-							$post_id = (isset($post_array[0]->ID)) ? $post_array[0]->ID; : '';
+							$post_id = (isset($post_array[0]->ID)) ? $post_array[0]->ID : '';
 						}
 						# Post ID - Method #3
 						# Fallback method. Unreliable from Disqus using the identifier field.
